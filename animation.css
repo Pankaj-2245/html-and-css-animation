@@ -1,0 +1,17 @@
+.transitiondiv {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s, height 1s, background-color 2s;
+    transition-delay: 0.2s;
+}
+
+.transitiondiv:hover {
+    transform: rotate(360deg);
+    width: 200px;
+    height: 200px;
+    background-color: green;
+
+
+
+}
