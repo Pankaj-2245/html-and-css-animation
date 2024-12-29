@@ -1,0 +1,132 @@
+
+.button{
+    background-color: green;
+    color: white;
+    padding: 50px 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.button span{
+    color: red;
+    font-size: xx-large;
+}
+
+.button::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 90%;
+    right: 45%;
+    transform: rotate(45deg);
+    z-index: -1;
+
+}
+
+.button::before{
+    content: " World";
+    color: yellow;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button:hover{
+    background-color: blue;
+    color: white;
+   transform: rotate(360deg);
+   transition-duration: 3s;
+   translate: 405%;
+}
+
+.flex-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    font-size: 5em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#item1{
+    background-color: aqua;
+}
+
+#item2{
+    background-color: green;
+}
+
+#item3{
+    background-color: blue;
+}
+
+#item4{
+    background-color: yellow;
+}
+
+#item5{
+    background-color: orange;
+}
+
+#item6{
+    background-color: violet;
+}
+
+#item7{
+    background-color: pink;
+}
+
+#item8{
+    background-color: brown;
+}
+
+#item9{
+    background-color: cyan;
+}
+
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: rosybrown;
+    border: 2px solid black;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    animation-name: slideright;
+    animation-duration: 3s;
+}
+
+#box:hover{
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+
+@keyframes slideright{
+   to{
+       transform: translateX(200%);
+   }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
